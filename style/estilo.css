@@ -1,0 +1,237 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+	background-color: #fff;
+	height: 100%;
+	overflow-x: hidden;
+}
+
+/* Define tamanho maximo para os itens do corpo */
+.tamanho-max {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+.div-conteudo {
+	max-width: 600px;
+	margin: 0 auto;
+	color: #0000008c;
+	text-align: center;
+}
+
+/* INICIO DO TOPO */
+
+/* Topo com navegação */
+header {
+	background-color: #00cad1;
+	width: 100%;
+}
+.navigation {
+	margin: 0 auto;
+	width: 100%;
+	min-height: 60px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* links de navegação */
+.topo-logo {
+	font-weight: 600;
+}
+.logo img {
+	height: 60px;
+}
+.links-topo {
+	padding: 10px;
+
+}
+.links-topo a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	padding: 10px;
+}
+.links-topo a:hover {
+	color: #12a4a9b8;
+}
+
+/* FIM TOPO */
+
+/* destaque com imagem */
+.destaque {
+	position: relative;
+	background-image: url("../assets/recepcao.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 500px;
+}
+.box-visao-geral-titulo{
+	height: 100%;
+	color: #fff;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+  }
+.box-visao-geral-titulo h1 {
+	font-weight: 500;
+	text-transform: uppercase;
+	margin: 0;
+	width: 100%;
+	position: absolute;
+	color: #fff;
+	font: normal 38px 'Source Sans Pro', sans-serif ;
+	
+}
+
+/* Seção sobre, especialidades e contato */
+.sobre, .especialidades, .contato {
+	margin: 0 auto;
+	color: #0000008c;
+	padding: 40px 20px 0;
+}
+.divisao {
+	margin: 0 auto;
+}
+.divisao p em {
+	font-weight: bold;
+}
+
+/* Lista Sobre Imagem */
+.secao-lista {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.fig-sobre img {
+	height: 250px;
+}
+.fig-sobre {
+	margin: 0;
+}
+
+/* Divisão da lista de serviços */
+.lista-servicos h3 {
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.lista-servicos ul {
+	text-align: left;
+}
+
+/* Bloco de figuras das especialidades */
+.fig-spec {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.fig-spec div {
+	margin: 20px;
+	width: calc((100% / 3) - 40px);
+	box-shadow: 1px 1px 10px #000;
+	border-radius: 5px;
+}
+.fig-spec div img {
+	width: 100%;
+}
+.fig-spec div figcaption {
+	padding: 10px;
+	text-transform: uppercase;
+	font-size: 25px;
+}
+
+/* Link para a página dos Horários */
+.especialidades {
+	text-align: center;
+}
+.especialidades a {
+	padding: 10px 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #fff;
+	background-color: #00cad1;
+}
+
+/* INICIO FOOTER */
+footer {
+	background-color: #0d6e71;
+	color: #fff;
+	padding: 20px;
+}
+footer .rodape {
+	text-align: center;
+}
+.rodape img {
+	width: 120px;
+}
+/* FIM DO FOOTER */
+
+/* RESPONSIVO ATÉ 425 PIXELS */
+@media screen and (max-width: 425px) {
+	.navigation {
+		display: block;
+		text-align: center;
+	}
+	.links-topo {
+		border-top: 1px solid rgba(0, 0, 0, 0.332);
+		width: 95%;
+		display: flex;
+		justify-content: space-between;
+	}
+	.destaque {
+		height: 200px;
+	}
+	.box-visao-geral-titulo h1 {
+		font-size: 28px;
+	}
+	.fig-sobre {
+		display: none;
+	}
+	.fig-spec div{
+		width: 100%;
+	}	
+}
+/* FIM RESPONSIVO ATÉ 425 PIXELS */
+
+/* INICIO RESPONSIVO DE 425 ATÉ 768 PIXELS */
+@media screen and (min-width: 425px) and (max-width: 768px) {
+	.destaque{
+		height: 300px;
+	}
+	.box-visao-geral-titulo h1 {
+		font-size: 34px;
+	}
+	.fig-sobre {
+		display: none;
+	}
+	.fig-spec div{
+		width: calc((100%/2) - 40px);
+	}
+}
+/* FIM RESPONSIVO DE 425 A 768 PIXELS*/
+
+/* INICIO RESPONSIVO DE 768 ATÉ 1024 PIXELS */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	.destaque{
+		height: 400px;
+	}
+	.box-visao-geral-titulo h1 {
+		font-size: 36px;
+	}
+}
+/* FIM RESPONSIVO DE 768 A 1024 PIXELS*/
+
+/* INICIO RESPONSIVO DE 1024 PIXELS OU MAIOR*/
+@media screen and (min-width: 1024px) {
+	.destaque{
+		height: 500px;
+	}
+}
+/* FIM RESPONSIVO DE 1024 PIXELS OU MAIOR*/

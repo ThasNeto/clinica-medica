@@ -1,0 +1,103 @@
+
+/* INICIO CORPO*/
+
+/* Links do corpo */
+.div-conteudo h1 {
+	padding: 0 0 20px 0;
+}
+.div-conteudo a {
+	padding: 0 10px;
+	height: 30px;
+	text-decoration: none;
+	color: #0000008c;
+}
+.div-conteudo a:hover {
+	color: #04989d;
+	border-bottom: 2px solid #00cad1;
+}
+.div-conteudo nav {
+	padding: 15px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	font-size: 18px;
+	font-weight: 600;	
+}
+
+/* Divisão das tabelas */
+.box-spec {
+	display: flex;
+	justify-content: center;
+	height: 240px;
+}
+.box-spec img {
+	min-width: 250px;
+	width: 30%;
+	height: 100%;
+}
+
+/* Tabelas */
+table {
+	text-align: center;
+	border-spacing: 0;
+	width: 70%;
+	height: 100%;
+}
+thead {
+	background-color: #00cad1;
+	color: #fff;
+	font-size: 20px;
+}
+table th, table td{
+	padding: 10px;
+}
+tr {
+	font-weight: 500;
+}
+tbody{
+	background-color: #cdcdcd;
+}
+tbody tr:nth-of-type(even) {
+	background-color: #f1f1f1;
+}
+.specs {
+	margin-bottom: 60px;
+}
+/* FIM CORPO */
+
+/* RESPONSIVO ATÉ 425 PIXELS */
+@media screen and (max-width: 425px) {
+	.box-spec img {
+		display: none;
+	}
+	.box-spec {
+		height: 100%;
+	}
+	table {
+		width: 100vw;
+	}
+}
+/* FIM RESPONSIVO ATÉ 425 PIXELS */
+
+/* INICIO RESPONSIVO DE 425 ATÉ 768 PIXELS */
+@media screen and (min-width: 425px) and (max-width: 768px) {
+	.box-spec img {
+		display: none;
+	}
+	table {
+		width: 90vw;
+	}
+}
+/* FIM RESPONSIVO DE 425 A 768 PIXELS*/
+
+/* INICIO RESPONSIVO DE 768 ATÉ 1024 PIXELS */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+		
+}
+/* FIM RESPONSIVO DE 768 A 1024 PIXELS*/
+
+/* INICIO RESPONSIVO DE 1024 PIXELS OU MAIOR*/
+@media screen and (min-width: 1024px) {
+		
+}
+/* FIM RESPONSIVO DE 1024 PIXELS OU MAIOR*/
