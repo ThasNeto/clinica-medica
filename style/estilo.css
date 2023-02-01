@@ -41,6 +41,7 @@ header {
 /* links de navegação */
 .topo-logo {
 	font-weight: 600;
+	padding: 0 10px;
 }
 .logo img {
 	height: 60px;
@@ -174,7 +175,7 @@ footer .rodape {
 /* FIM DO FOOTER */
 
 /* RESPONSIVO ATÉ 425 PIXELS */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
 	.navigation {
 		display: block;
 		text-align: center;
@@ -201,7 +202,7 @@ footer .rodape {
 /* FIM RESPONSIVO ATÉ 425 PIXELS */
 
 /* INICIO RESPONSIVO DE 425 ATÉ 768 PIXELS */
-@media screen and (min-width: 425px) and (max-width: 768px) {
+@media screen and (min-width: 500px) and (max-width: 768px) {
 	.destaque{
 		height: 300px;
 	}
